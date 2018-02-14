@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!-- rename hideme function and remove ng-hide -->
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="main" ng-controller="FormController as form">
+      <h1>TODO List</h1>
+      <p>A Place to store the things you have to do!</p>
+      <form ng-submit="form.add(form.input)">
+        <input type="text" placeholder="Filter your to-dos" ng-model="whatToDo">
+        <ol>
+          <li ng-repeat="todo in form.list | filter: whatToDo track by $index">{{ todo.todo }} <span ng-click="form.hideMe($index)"><i class="material-icons">close</i></span></li>
+        </ol>
+        <input type="text" placeholder="Add your to-do" ng-model="form.input">
+        <button type="submit">Add</button>
+      </form>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="controller.js"></script>
+  </body>
+</html>
