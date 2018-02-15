@@ -8,11 +8,11 @@ function FormController(){
     console.log(vm.list);
     vm.input = "";
   };
-  vm.hideMe = function($index){
-    vm.list.splice($index,1);
-    console.log("remove");
-    console.log(vm.list);
-  };
+  // vm.removeMe = function($index){
+  //   vm.list.splice($index,1);
+  //   console.log("remove");
+  //   console.log(vm.list);
+  // };
 
   vm.list = [{todo: "dog"},{todo: "cat"},{todo: "rat"}];
   console.log(vm.list);
