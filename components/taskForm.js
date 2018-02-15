@@ -1,8 +1,9 @@
 (function() {
   var taskForm = {
     templateUrl: "partials/taskForm.html",
-    controller: function FormController() {
+    controller: function FormController(TodoService) {
       var $ctrl = this;
+      $ctrl.list = [];
       $ctrl.input = "";
       $ctrl.add = function(input) {
         if ($ctrl.input !== "") {
@@ -10,10 +11,12 @@
             todo: input
           });
           $ctrl.input = "";
+          TodoService.setList($ctrl.list);
         }
       };
 
-      $ctrl.list = [];
+
+
 
     }
   };
