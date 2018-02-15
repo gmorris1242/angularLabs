@@ -9,8 +9,6 @@
         var $ctrl = this;
         $ctrl.removeMe = function($index){
           $ctrl.list.splice($index,1);
-          console.log("remove");
-          console.log($ctrl.list);
         };
       }
     };
