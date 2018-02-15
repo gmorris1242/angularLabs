@@ -10,7 +10,7 @@ function FormController(){
   };
 
   vm.list = [];
-  console.log(vm.list);
+  
 };
   angular.module("app").controller("FormController", FormController);
 }());

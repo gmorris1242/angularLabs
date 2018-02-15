@@ -40,6 +40,7 @@ button {
   border-radius: 5px;
   color: white;
   font-size: 1rem;
+  transition: transform 400ms;
 }
 
 input {
@@ -82,11 +83,6 @@ button:hover {
   cursor: pointer;
   transform: scale(1.03);
   transition: transform 400ms;
-}
-
-button:after {
-  transition: transform 400ms;
-
 }
 
 /* ol li span:hover {
