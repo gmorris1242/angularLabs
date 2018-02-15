@@ -3,21 +3,15 @@
     templateUrl: "partials/taskForm.html",
     controller: function FormController(TodoService) {
       var $ctrl = this;
-      $ctrl.list = [];
+
+      $ctrl.list = TodoService.getList();
       $ctrl.input = "";
       $ctrl.add = function(input) {
         if ($ctrl.input !== "") {
-          $ctrl.list.push({
-            todo: input
-          });
+          TodoService.setList(input);
           $ctrl.input = "";
-          TodoService.setList($ctrl.list);
         }
       };
-
-
-
-
     }
   };
 
