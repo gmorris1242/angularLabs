@@ -84,12 +84,17 @@ button:hover {
   transition: transform 400ms;
 }
 
-ol li span:hover {
+button:after {
+  transition: transform 400ms;
+
+}
+
+/* ol li span:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 300ms;
   color: #ff0000;
-}
+} */
 
 ol li:hover {
   background-color: #eee;

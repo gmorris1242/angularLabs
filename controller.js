@@ -8,13 +8,8 @@ function FormController(){
     console.log(vm.list);
     vm.input = "";
   };
-  // vm.removeMe = function($index){
-  //   vm.list.splice($index,1);
-  //   console.log("remove");
-  //   console.log(vm.list);
-  // };
 
-  vm.list = [{todo: "dog"},{todo: "cat"},{todo: "rat"}];
+  vm.list = [];
   console.log(vm.list);
 };
   angular.module("app").controller("FormController", FormController);

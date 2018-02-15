@@ -3,10 +3,7 @@
   <p>A Place to store the things you have to do!</p>
   <form ng-submit="$ctrl.add($ctrl.input)">
       <task-list list="$ctrl.list"></task-list>
-      <!-- <input type="text" placeholder="Filter your to-dos" ng-model="whatToDo">
-      <ol>
-        <li ng-repeat="todo in $ctrl.list | filter: whatToDo track by $index">{{todo.todo}} <span ng-click="$ctrl.hideMe($index)"><i class="material-icons">close</i></span></li>
-      </ol> -->
+
     <input type="text" placeholder="Add your to-do" ng-model="$ctrl.input">
     <button type="submit">Add</button>
   </form>
