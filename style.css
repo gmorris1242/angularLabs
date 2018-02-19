@@ -112,12 +112,16 @@ ol li:hover {
 }
 
 .enterBtn {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-end;
   margin-top: 20px;
   transition: transform 400ms;
 }
 
+.test {
+  display: flex;
+  justify-content: flex-end;
+}
 
 a {
   text-decoration: none;
@@ -125,16 +129,10 @@ a {
   opacity: 0.5;
 }
 
-.backBtn span {
-  opacity: 0.5;
-}
-
 .backBtn {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
-
   transition: transform 400ms;
-
 }
 
 .backBtn i {
