@@ -114,6 +114,7 @@ ol li:hover {
 .enterBtn {
   display: inline-flex;
   justify-content: flex-end;
+  align-items: center;
   margin-top: 20px;
   transition: transform 400ms;
 }
@@ -132,11 +133,12 @@ a {
 .backBtn {
   display: inline-flex;
   justify-content: flex-start;
+  align-items: center;
   transition: transform 400ms;
 }
 
 .backBtn i {
-  width: 25px;
+  width: 20px;
 }
 
 .backBtn:hover {
@@ -150,3 +152,11 @@ a {
   transition: transform 400ms;
   color:#ff1493;
 }
+
+a .material-icons {
+  font-size: 1.2rem;
+}
+
+/* li .material-icons {
+  font-size: 1.1rem;
+} */
